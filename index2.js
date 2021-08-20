@@ -1,1 +1,0 @@
-console.log("Cuma buat tes 2")
