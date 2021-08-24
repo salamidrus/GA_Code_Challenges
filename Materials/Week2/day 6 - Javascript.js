@@ -32,9 +32,18 @@ const persons = [
 // ARRAY - index
 const fruits = ["banana", "apple", "grape"];
 
-
 // ERROR
 // Syntax Error -> Code Salah Tulis atau Method unavailable dst.
 // Runtime Error -> Runtime e.g. node/browser
 // Logical Error -> Works tapi ga sesuai ekspektasi kita
 // Server Error -> Server down, No internet/network dst.
+
+function tes1() {
+  solution = "jihad"
+
+  return 1 + 1
+  console.log(solution)
+  console.log("tesss")
+}
+
+console.log(tes1() + 2)
