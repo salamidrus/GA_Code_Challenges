@@ -62,7 +62,7 @@ const arrowDirect = () => "tes";
 // TERNARY OPERATOR
 let isRaining = true;
 
-isRaining ? "Ujan" : "Cerah"
+isRaining ? "Ujan" : "Cerah";
 // isRaining ? "Ujan" : isRaining == "Berkabut" ? "Kabut" : "Cerah";
 
 // if (isRaining) {
@@ -74,16 +74,70 @@ isRaining ? "Ujan" : "Cerah"
 // }
 
 // SPREAD & REST OPERATOR
-let arrSpread = [1,2,3,4,5]
-let arrSp = [...arr.map(el => el * 10), 6, 7, 8,...arrSpread]
+let arrSpread = [1, 2, 3, 4, 5];
+let arrSp = [...arr.map((el) => el * 10), 6, 7, 8, ...arrSpread];
 
 function randomFunc(...args) {
   // console.log(args)
-} 
+}
 
-randomFunc("jihad")
+randomFunc("jihad");
 
 // ES 7
 // Array & Object Destructuring
+
+let [name, clas, city] = ["Fariz", "Binar", "Jakarta"];
+let obj = {
+  id: 1,
+  nama: "jihad",
+  kelas: "backend",
+  from: "mojokerto",
+};
+
+let { nama, kelas, from } = obj;
+// console.log(kelas);
+
+let data = [
+  {
+    id: 1,
+    username: "riyanto darliana",
+    age: 25,
+  },
+  {
+    id: 2,
+    username: "riski",
+    age: null,
+  },
+];
+
+// data = {data : []}
+
+let dataMap = data.map((item) => {
+  if (item.age == null) item.age = 20;
+  if (item.username.length > 5) item.username = item.username.slice(0, 4);
+
+  return {
+    ...item,
+    school: "Binar",
+    randomId: item.username + item.age,
+  };
+});
+
+// console.log(dataMap);
+
 // ES 2020
 // Null Coalescing, Optional Chaining
+let person = {
+  fruit: "apple",
+  age: null,
+  taste: {
+    flavour: "sweet",
+  },
+};
+
+let ages = person.age ?? false;
+// false, undefined
+// console.log(ages)
+console.log(person.nama?.flavour);
+
+console.log("LANCARRRR");
