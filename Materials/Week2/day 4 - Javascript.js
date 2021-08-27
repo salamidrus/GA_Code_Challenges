@@ -3,6 +3,8 @@
 // DRY - Do Not Repeat Yourself
 // WET - Write Everything Twice
 
+// SOLID
+
 function sumFunc(a, b) {
   return a + b - (10 * 100) / 50;
 }
@@ -21,4 +23,7 @@ function calculator() {
 }
 
 let calc1 = calculator()
-console.log(calc1.substract(4,5))
+// console.log(calc1.substract(4,5))
+
+let str = "jihad"
+console.log(str.split("").reverse().join(""))
