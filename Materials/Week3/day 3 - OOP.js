@@ -26,7 +26,6 @@ let cat = new Cat("Tommy", 20, "Anggora");
 class Human {
   #ktp;
   #greet;
-
   constructor(nama, umur, ktp) {
     this.nama = nama; // public
     this.umur = umur; // public
@@ -44,13 +43,28 @@ class Ongkir {
   #ongkir;
   constructor(berat) {
     this.berat = berat;
-    this.#ongkir = this.berat * 1000;
+    this.#ongkir = this.berat * 2000;
+    this._publik = "tes aja";
+    var jihad = "jihad"
+  }
+
+  getJihad() {
+    return this.jihad
+  }
+
+  setJihad(jihad) {
+    this.jihad = jihad
   }
 
   hitungOngkir = () => this.ongkir; // getter
 }
 
 let kirimTv = new Ongkir(10);
+// kirimTv.#ongkir = "Gantiii";
+kirimTv._publik = "Ganti ah"
+// kirimTv.setJihad("Haaa")
+
+console.log(kirimTv.getJihad());
 
 // Polymorphism - Overriding property/method
 class SumbawaPeople extends Human {
