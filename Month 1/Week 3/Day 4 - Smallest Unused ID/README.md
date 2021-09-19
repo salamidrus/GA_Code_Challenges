@@ -1,1 +1,1 @@
-https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1
+https://www.codewars.com/kata/55eea63119278d571d00006a
